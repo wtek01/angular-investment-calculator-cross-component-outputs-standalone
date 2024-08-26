@@ -16,9 +16,10 @@ export class UserInputComponent {
     expectedReturn: 5,
     duration: 10,
   };
-  @Output() calculate = new EventEmitter<InvestmentInput>();
+
+  @Output() investmentInputChanged = new EventEmitter<InvestmentInput>();
 
   onSubmit() {
-    this.calculate.emit(this.investmentInput);
+    this.investmentInputChanged.emit(this.investmentInput);
   }
 }
