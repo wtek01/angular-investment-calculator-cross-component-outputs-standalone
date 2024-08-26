@@ -1,27 +1,19 @@
-# EssentialsPractice
+### Technologies and Concepts Used
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0-next.2.
+This project leverages various technologies and concepts to achieve its functionality. Here's an overview of the key ones:
 
-## Development server
+#### Standalone Components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project is built using standalone components, each designed to handle a specific task or functionality. These components are self-contained and can be easily reused across the application. This approach promotes modularity, making it easier to maintain and update individual components without affecting the entire application.
 
-## Code scaffolding
+#### Cross-Component Outputs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To facilitate communication between components, the project employs cross-component outputs. This allows components to share data and events with each other, enabling a more dynamic and interactive user experience. Outputs are used to emit events or data from one component to another, enabling a loose coupling between components and promoting a more modular architecture.
 
-## Build
+#### Outputs and @Inputs Decorator
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project utilizes the `@Inputs` decorator to define properties that can be passed from a parent component to a child component. This decorator is used to mark a property as an input, allowing the parent component to bind a value to it. This approach enables a clear and explicit way of passing data between components, making it easier to understand and manage the data flow within the application.
 
-## Running unit tests
+Additionally, the project uses outputs to emit events or data from a child component to its parent component. This is achieved through the use of the `@Outputs` decorator, which marks a property as an output. This allows the child component to notify the parent component of changes or events, enabling a more dynamic and interactive user interface.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+By leveraging these technologies and concepts, the project achieves a modular, scalable, and maintainable architecture that is easy to understand and extend.

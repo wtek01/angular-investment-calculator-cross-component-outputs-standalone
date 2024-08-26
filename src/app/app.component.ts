@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import type { InvestmentInput } from './models/investement-input.model';
 import { InvestmentResultsComponent } from './investment-results/investment-results.component';
+import { InvestmentResult } from './models/investment-results.model';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +12,7 @@ import { InvestmentResultsComponent } from './investment-results/investment-resu
   imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
 })
 export class AppComponent {
-  annualInvestmentResults?: {
-    year: number;
-    interest: number;
-    valueEndOfYear: number;
-    annualInvestment: number;
-    totalInterest: number;
-    totalAmountInvested: number;
-  }[];
+  annualInvestmentResults?: InvestmentResult[];
   onCalculateInvestmentResults(investmentInput: InvestmentInput) {
     const { initialInvestment, annualInvestment, expectedReturn, duration } =
       investmentInput;

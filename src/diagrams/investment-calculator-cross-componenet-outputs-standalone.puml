@@ -7,12 +7,12 @@ class AppComponent {
 
 class UserInputComponent {
   +investmentInput: InvestmentInput
-  +investmentInputChanged: EventEmitter<InvestmentInput>
+  +@Output investmentInputChanged: EventEmitter<InvestmentInput>
   +onSubmit(): void
 }
 
 class InvestmentResultsComponent {
-  +annualInvestmentResults?: InvestmentResult[]
+  +@Input annualInvestmentResults?: InvestmentResult[]
 }
 
 class HeaderComponent {
